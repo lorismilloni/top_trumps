@@ -33,20 +33,26 @@ export default class FilterList extends Component {
 
     return (
       <section>
-        { filterCards.map((card) => (
-          <div key={ card.cardName }>
-            <Card
-              { ...card }
-            />
-            <button
-              type="button"
-              data-testid="delete-button"
-              onClick={ () => deleteCard(card, card.cardTrunfo) }
-            >
-              Excluir
-            </button>
+        <div class="box columns">
+          <div class="column"></div>
+          <div class="column">
+          { filterCards.map((card) => (
+            <div key={ card.cardName }>
+              <Card
+                { ...card }
+              />
+              <button
+                type="button"
+                data-testid="delete-button"
+                onClick={ () => deleteCard(card, card.cardTrunfo) }
+              >
+                Excluir
+              </button>
+            </div>
+          ))}
           </div>
-        ))}
+          <div class="column"></div>
+        </div>
       </section>);
   }
 }

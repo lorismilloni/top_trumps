@@ -24,6 +24,8 @@ class Form extends Component {
         <div class="box columns">
           <div class="column"></div>
           <div class="column">
+            <h1 class="title">TOP TRUMPS</h1>
+            <h3 class="subtitle is-3">Crie sua carta com as informações</h3>
             <div className="inputs">
               <div class="field is-grouped">
                 <label class="label" htmlFor="Name">

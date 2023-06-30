@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-max-depth */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -21,142 +22,167 @@ class Form extends Component {
     /* console.log(this.props); */
     return (
       <form>
-        <div class="box columns">
-          <div class="column"></div>
-          <div class="column">
-            <h1 class="title">TOP TRUMPS</h1>
-            <h3 class="subtitle is-3">Crie sua carta com as informações</h3>
+        <div className="box columns">
+          <div className="column" />
+          <div className="column">
+            <h1 className="title">TOP TRUMPS</h1>
+            <h3 className="subtitle is-3">Crie sua carta com as informações</h3>
             <div className="inputs">
-              <div class="field is-grouped">
-                <label class="label" htmlFor="Name">
+              <div className="field is-grouped">
+                <label className="label" htmlFor="Name">
                   Nome
-                  <div class="control">
-                    <input
-                      name="cardName"
-                      class="input"
-                      type="text"
-                      value={cardName}
-                      id="Name"
-                      onChange={onInputChange}
-                      data-testid="name-input" />
+                  <div className="control">
+                    { // eslint-disable-next-line react/jsx-max-depth
+                      <input
+                        name="cardName"
+                        className="input"
+                        type="text"
+                        value={ cardName }
+                        id="Name"
+                        onChange={ onInputChange }
+                        data-testid="name-input"
+                      />
+                    }
                     {/* como a prop vai enviar o valor que estiver dentro do input,
     precisa ser colocada entre chaves por ser como o valor de uma variável JS */}
                   </div>
                 </label>
               </div>
-              <div class="field is-grouped">
-                <label class="label" htmlFor="Description">
+              <div className="field is-grouped">
+                <label className="label" htmlFor="Description">
                   Descrição
-                  <textarea
-                    name="cardDescription"
-                    class="textarea"
-                    value={cardDescription}
-                    id="Description"
-                    cols="30"
-                    rows="10"
-                    onChange={onInputChange}
-                    data-testid="description-input" />
+                  { // eslint-disable-next-line react/jsx-max-depth
+                    <textarea
+                      name="cardDescription"
+                      className="textarea"
+                      value={ cardDescription }
+                      id="Description"
+                      cols="30"
+                      rows="10"
+                      onChange={ onInputChange }
+                      data-testid="description-input"
+                    />
+                  }
                 </label>
               </div>
             </div>
           </div>
-          <div class="column"></div>
-          <div class="column">
-            <div class="field">
-              <div class="field is-grouped">
-                <label class="label" htmlFor="cardAttr1">
+          <div className="column" />
+          <div className="column">
+            <div className="field">
+              <div className="field is-grouped">
+                <label className="label" htmlFor="cardAttr1">
                   Attr01
-                  <input
-                    class="input"
-                    type="number"
-                    name="cardAttr1"
-                    value={cardAttr1}
-                    onChange={onInputChange}
-                    data-testid="attr1-input" />
+                  { // eslint-disable-next-line react/jsx-max-depth
+                    <input
+                      className="input"
+                      type="number"
+                      name="cardAttr1"
+                      value={ cardAttr1 }
+                      onChange={ onInputChange }
+                      data-testid="attr1-input"
+                    />
+                  }
                 </label>
               </div>
-              <div class="field is-grouped">
-                <label class="label" htmlFor="cardAttr2">
+              <div className="field is-grouped">
+                <label className="label" htmlFor="cardAttr2">
                   Attr02
-                  <input
-                    class="input"
-                    type="number"
-                    name="cardAttr2"
-                    value={cardAttr2}
-                    onChange={onInputChange}
-                    data-testid="attr2-input" />
+                  { // eslint-disable-next-line react/jsx-max-depth
+                    <input
+                      className="input"
+                      type="number"
+                      name="cardAttr2"
+                      value={ cardAttr2 }
+                      onChange={ onInputChange }
+                      data-testid="attr2-input"
+                    />
+                  }
                 </label>
               </div>
-              <div class="field is-grouped">
-                <label class="label" htmlFor="cardAttr3">
+              <div className="field is-grouped">
+                <label className="label" htmlFor="cardAttr3">
                   Attr03
-                  <input
-                    class="input"
-                    type="number"
-                    name="cardAttr3"
-                    value={cardAttr3}
-                    onChange={onInputChange}
-                    data-testid="attr3-input" />
+                  { // eslint-disable-next-line react/jsx-max-depth
+                    <input
+                      className="input"
+                      type="number"
+                      name="cardAttr3"
+                      value={ cardAttr3 }
+                      onChange={ onInputChange }
+                      data-testid="attr3-input"
+                    />
+                  }
                 </label>
               </div>
               Pontos restantes = 000
             </div>
-            <div class="field is-grouped">
-              <label class="label" htmlFor="Image">
+            <div className="field is-grouped">
+              <label className="label" htmlFor="Image">
                 Imagem
-                <input
-                  class="input"
-                  type="text"
-                  name="cardImage"
-                  value={cardImage}
-                  id="Image"
-                  onChange={onInputChange}
-                  data-testid="image-input" />
+                { // eslint-disable-next-line react/jsx-max-depth
+                  <input
+                    className="input"
+                    type="text"
+                    name="cardImage"
+                    value={ cardImage }
+                    id="Image"
+                    onChange={ onInputChange }
+                    data-testid="image-input"
+                  />
+                }
               </label>
             </div>
-            <div class="field">
+            <div className="field">
               <div>
-                <label class="label" htmlFor="Rare">
-                  Raridade
-                </label>
+                { // eslint-disable-next-line jsx-a11y/label-has-associated-control, react/jsx-max-depth
+                  <label className="label" htmlFor="Rare">
+                    Raridade
+                  </label>
+                }
               </div>
-              <div class="control">
-                <div class="select">
+              <div className="control">
+                <div className="select">
                   <select
                     aria-label="input-carta-rara"
                     name="cardRare"
-                    value={cardRare}
+                    value={ cardRare }
                     id="Rare"
-                    onChange={onInputChange}
+                    onChange={ onInputChange }
                     data-testid="rare-input"
                   >
-                    <option value="normal">Normal</option>
-                    <option value="raro">Raro</option>
-                    <option value="muito raro">Muito raro</option>
+                    { // eslint-disable-next-line react/jsx-max-depth
+                      <>
+                        <option value="normal">Normal</option>
+                        <option value="raro">Raro</option>
+                        <option value="muito raro">Muito raro</option>
+                      </>
+                    }
                   </select>
                 </div>
               </div>
             </div>
-            <div class="field">
-              <label class="checkbox" htmlFor="cardTrunfo">
+            <div className="field">
+              <label className="checkbox" htmlFor="cardTrunfo">
                 {hasTrunfo ? <p>Você já tem um Super Trunfo em seu baralho</p> : <input
                   type="checkbox"
                   name="cardTrunfo"
                   title="Super Trybe Trunfo"
-                  checked={cardTrunfo}
-                  onChange={onInputChange}
-                  data-testid="trunfo-input" />}
+                  checked={ cardTrunfo }
+                  onChange={ onInputChange }
+                  data-testid="trunfo-input"
+                />}
                 {/* usa a saveCard e deleteCard para validar o super trunfo */}
                 Super Trunfo
                 {/* {console.log(isSaveButtonDisabled)} */}
               </label>
-              <div class="buttons">
+              <div className="buttons">
                 <button
-                  class="button is-primary"
+                  className="button is-primary"
                   name="save"
                   type="button"
-                  disabled={isSaveButtonDisabled}
-                  onClick={onSaveButtonClick}
+                  disabled={ isSaveButtonDisabled }
+                  onClick={ onSaveButtonClick }
                   data-testid="save-button"
                 >
                   Salvar
@@ -164,7 +190,7 @@ class Form extends Component {
               </div>
             </div>
           </div>
-          <div class="column"></div>
+          <div className="column" />
         </div>
       </form>
     );

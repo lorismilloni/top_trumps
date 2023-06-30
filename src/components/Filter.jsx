@@ -8,13 +8,13 @@ class Filter extends Component {
     const { onInputChange } = this.props;
 
     return (
-      <div class="box columns">
-        <div class="column"></div>
-        <div class="field is-grouped column">
+      <div className="box columns">
+        <div className="column" />
+        <div className="field is-grouped column">
           <h4>Busque sua carta</h4>
-          <div class="control">
+          <div className="control">
             <input
-              class="input"
+              className="input"
               name="filterName"
               type="text"
               placeholder="Nome da carta"
@@ -22,7 +22,7 @@ class Filter extends Component {
               onChange={ onInputChange }
             />
           </div>
-          <div class="select">
+          <div className="select">
             <select
               name="filterRare"
               type="select"
@@ -43,7 +43,7 @@ class Filter extends Component {
             onChange={ onInputChange }
           />
         </div>
-        <div class="column"></div>
+        <div className="column" />
       </div>
     );
   }

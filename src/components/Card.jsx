@@ -15,16 +15,24 @@ class Card extends Component {
     } = this.props;
 
     return (
-      <div>
-        <p data-testid="name-card">{ cardName }</p>
-        <img src={ cardImage } alt={ cardName } data-testid="image-card" />
-        <p data-testid="description-card">{ cardDescription }</p>
-        <p data-testid="attr1-card">{ cardAttr1 }</p>
-        <p data-testid="attr2-card">{ cardAttr2 }</p>
-        <p data-testid="attr3-card">{ cardAttr3 }</p>
-        <p data-testid="rare-card">{ cardRare }</p>
-        { cardTrunfo && <p data-testid="trunfo-card">Super Trunfo</p> }
-        {/* renderização condicional */}
+      <div class="columns is-mobile">
+        <div class="card has-background-warning column is-half is-offset-one-quarter">
+          <div class="card-image">
+            <img src={ cardImage } alt={ cardName } data-testid="image-card" />
+          </div>
+          <div class="card-content">
+            <div class="media-content">
+              <p class="title is-4" data-testid="name-card">{ cardName }</p>
+              <p class="subtitle is-6" data-testid="description-card">{ cardDescription }</p>
+              <p class="subtitle is-6" data-testid="attr1-card">{ cardAttr1 }</p>
+              <p class="subtitle is-6" data-testid="attr2-card">{ cardAttr2 }</p>
+              <p class="subtitle is-6" data-testid="attr3-card">{ cardAttr3 }</p>
+              <p class="subtitle is-6" data-testid="rare-card">{ cardRare }</p>
+              { cardTrunfo && <p class="title is-5" data-testid="trunfo-card">Super Trunfo</p> }
+              {/* renderização condicional */}
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

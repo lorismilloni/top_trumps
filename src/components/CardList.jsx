@@ -33,8 +33,6 @@ export default class CardList extends Component {
   }
 }
 
-// requisito feito olhando PR da Kerli Schroeder, quando entendi que era necessário puxar o componente Card para as informações serem exibidas, e usei o modelo da função para remover a carta;
-
 CardList.propTypes = {
   cardList: PropTypes.array,
   deleteCard: PropTypes.func,

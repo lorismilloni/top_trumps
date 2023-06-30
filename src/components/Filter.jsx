@@ -40,8 +40,6 @@ class Filter extends Component {
   }
 }
 
-// componente Filter criado com base no PR do Leonardo Vogel
-
 Filter.propTypes = {
   onInputChange: PropTypes.func,
 }.isRequired;

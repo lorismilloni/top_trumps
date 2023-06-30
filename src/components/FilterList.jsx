@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Card from './Card';
 
-// Requisito 10, 11 e 12 feitos seguindo o PR do Leonardo Vogel, com o objetivo de treinar a implementação da função e quem sabe deixar o joguinho funcional depois. Obrigada Leo.
-// Obrigada Eduardo Bazler por me ajudar a resolver o conflito no requisito, para passar no teste e não imprimir mais duas listas no meu Tryunfo, precisei remover do App o CardList, que continua comitado para consulta, a exibição anterior da lista que eu tinha criado para passar no requisito 8.
-// Agora só a lista com os filtros é exibida na minha página do Tryunfo.
-
 export default class FilterList extends Component {
   render() {
     const {
